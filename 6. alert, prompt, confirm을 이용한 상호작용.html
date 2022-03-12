@@ -1,0 +1,32 @@
+<script>
+    // 1. alert
+    // 모달창(modal window) : 메세지가 있는 작은 창
+    alert("hello");
+    
+    // 2. prompt
+    // prompt(title, [default]); > 텍스트 메세지와 입력필드, 확인과 취소버튼이 있는 모달창을 띄어준다.
+    // [] : 매개변수의 값이 필수가 아닌 선택을 의미한다.
+    // [default] : 입력필드의 초기값
+    // title : 사용자에게 보여 줄 문자열
+    
+    let age = prompt('나이를 입력해주세요', 100);
+    alert(`당신의 나이는 ${age}살 입니다`); // prompt에 기입한 값 출력
+
+    let test = prompt("Test");
+    // IE 사용자를 비롯한 모든 사용자에게 깔끔한 프롬프트를 보여주려면 두번째 매개변수를 입력할 것을 권장
+    let test1 = prompt("TEST", ''); // IE 사용자를 위한 매개변수 처리
+
+    // 컨펌 대화상자
+    // confirm(question);
+    // 매개변수로 받은 Q과 확인과 취소가 있는 모달창을 보여준다.
+    
+    let isBoss = confirm("당신이 주인인가요?");
+    alert(isBoss); // 결과값에 따라 true or false 반환
+    
+    /* summary
+    브라우저는 사용자와 상호작용할 수 있도록 3가지 함수를 제공한다.
+    alert : 메세지를 보여준다.
+    prompt : 입력필드를 제공
+    confirm : 확인 또는 취소버튼이 있는 모달창
+    */
+</script>

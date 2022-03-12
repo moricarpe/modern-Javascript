@@ -1,0 +1,68 @@
+<script>
+    let message
+    // message라는 변수 선언
+    message = 'Hello!';
+    message = 'hi!';
+    // 값이 hello에서 hi로 변경됐다.
+    
+    let message1 = 'Hello!';
+    // 변수를 정의하고 값을 할당
+
+    let user = 'john',
+        age = 25, 
+        message3 = 'Hello!';
+    // 한번에 여러개의 변수를 선언할 수도 있다.
+    // var과 let은 거의 동일하게 작동 but var은 오래된 방식
+    
+    let likey;
+    likey = message;
+    alert(message);// hi!
+    alert(likey); // hi!
+    
+    /* 변수는 한번만 설정해야 한다. 선언한 변수를 참조할 때는
+    let없이 let없이 변수명만 참조해야 한다. */ 
+
+    /* 변수 명명 규칙
+    1. 문자와 숫자, 그리고 $, _만 들어갈 수 있다.
+    2. 첫 글자는 숫자가 될 수 없다.
+    
+    카멜표기법(camelCase)
+    첫단어를 제외한 각 단어의 첫글자를 대문자로 표기
+    ex) oneAndOnly
+    */
+    const COLOR_RED = "F00";
+    let color = COLOR_RED;
+    alert(color);
+    // 상수는 변수의 값이 절대로 변하지 않음을 의미
+    // 변수의 명명은 중요하다. 변수를 선언하기 전에 그 이름이 적당한지 확인해라
+    // 변수선언 reserved name = var, const, let
+    // let 모던한 변수 선헌 - var 오래된 변수 선언 - const : let과 비슷하지만 변수 변경이 불가하다.
+    
+    let admin, name;
+    name = "lee";
+    admin = name;
+    alert(admin);
+
+    
+    let $ = 1;
+    let _ = 1;
+    document.write($ + _);
+
+    //잘못된 변수 선언 예시
+    let = la; // 숫자가 앞에 오면 안된다.
+    let = self-love; // -(하이픈)이 오면 안된다.
+    
+    /* reserved name 목록에 있는 단어는 변수명으로 사용 불가
+    ex) let class return function 
+    이 단어들은 이미 js에서 사용중이다. */
+
+    // 변화하지 않는 변수를 선언할 때 let 대신 const를 사용한다.
+    
+    // 대문자 상수 
+    /* 기억하기 어려운 값은 대문자로 변수를 할당한다
+     */
+
+    // task
+
+
+</script>
